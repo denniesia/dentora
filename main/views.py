@@ -33,4 +33,25 @@ def contact_page(request):
         return render(request, 'main/contact.html')
 
 
+def about_page(request):
+    return render(request, 'main/about.html')
 
+
+def appointment_page(request):
+    return render(request, 'main/appointment.html')
+
+
+def price_page(request):
+    return render(request, 'main/price.html')
+
+
+def service_page(request):
+    return render(request, 'main/service.html')
+
+
+def team_page(request):
+    return render(request, 'main/team.html')
+
+
+def testimonial_page(request):
+    return render(request, 'main/testimonial.html')

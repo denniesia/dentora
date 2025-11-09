@@ -31,3 +31,6 @@ def contact_page(request):
         return render(request, 'main/contact.html', context)
     else:
         return render(request, 'main/contact.html')
+
+
+

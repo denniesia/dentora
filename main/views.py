@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
-from dentora import settings
+
+from django.conf import settings
 # Create your views here.
 def index(request):
     return render(request, 'main/index.html')
@@ -13,7 +14,7 @@ def contact_page(request):
         message_subject = request.POST['message-subject']
         message_message = request.POST['message-message']
 
-        #send and email
+        #send an email
         send_mail(
             subject=message_subject,
             message=message_message,

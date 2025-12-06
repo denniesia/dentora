@@ -323,3 +323,7 @@ h6,
     width: 120px;
     height: 120px;
 }
+
+.p-top-15 {
+    padding-top: 1.5em;
+}
